@@ -3,24 +3,36 @@
 :root {
   --main-bg-color: #fff;
   --text-color: #000;
+  --accent-color: #087EA4;
 
   --font-family: 'Valley Sans', sans-serif;
+
+  --container-padding-x: 20px;
+
+  --transition-duration: 0.2s;
 }
 
 body {
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--main-bg-color);
+  padding-inline: var(--container-padding-x);
 }
 
 a {
-  color: inherit;
+  color: var(--accent-color);
   text-decoration: none;
+  transition-duration: var(--transition-duration);
+
+  &:hover {
+    color: inherit;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --main-bg-color: #23272f;
     --text-color: #fff;
+    --accent-color: #58C4DC;
   }
 }
