@@ -1,9 +1,15 @@
 import styles from './Header.module.scss'
+import { Link } from 'react-router'
+import { Button } from '../Button'
 
 export const Header = () => {
   return (
     <div className={styles.header}>
-      Header
+      <Link className={styles.headerLogo} to="/">ReactQuiz</Link>
+      <div className={styles.headerActions}>
+        <Button>New card</Button>
+        <Button>Log in</Button>
+      </div>
     </div>
   )
 }
