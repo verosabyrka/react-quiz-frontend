@@ -7,8 +7,8 @@ export const Header = () => {
     <header className={styles.header}>
       <Link className={styles.headerLogo} to="/">ReactQuiz</Link>
       <div className={styles.headerActions}>
-        <Button>New card</Button>
-        <Button>Log in</Button>
+        <Button isActive>New card</Button>
+        <Button isDisabled>Log in</Button>
       </div>
     </header>
   )
